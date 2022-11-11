@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+
+  <title>Ecomerce</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<main>
+
+  <body>
+    <div class="centrar">
+    <header class="header" id="header">
+      <nav class="nav container">
+        <div class="opop"><a href="#" class="navlogo">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48.92 56.48" class="navlogo-icon">
+            <title>Academlo Logo</title>
+            <g>
+              <g>
+                <path
+                  d="M28.58,15.39H25.16L35.78,36H31.49L20.67,15.71,8.23,38.82H18.94l3-5.43h-3.4l-1.47,2.54h-4l2.69-5.09H25.85l4.28,8H40.67ZM17.23,28.21l3.57-6.6,3.57,6.6Z">
+                </path>
+              </g>
+            </g>
+          </svg> Store
+        </a>
+
+        <div class="Menu" id="navmenu">
+          <ul class="listanav">
+            <li class="nav__item">
+              <a href="#" class="linkmenu linkactivo">Home</a>
+            </li>
+            <li class="LogoAcademlo">
+              <a href="#products" class="linkmenu">Products</a>
+            </li>
+
+          </ul>
+
+          <div class="cerrar" id="cerrarid">
+            <i class="bx bx-x"></i>
+          </div>
+        </div></div>
+
+        <div class="Botones">
+          <i class="bx bx-moon change-theme" id="theme-button"></i>
+
+          <div class="tienda" id="cartaid">
+            <i class="bx bx-shopping-bag"></i>
+            <span id="areaContador" class="count areaContador">0</span>
+          </div>
+
+          <div class="mostrar" id="mostrarid">
+            <i class="bx bx-grid-alt"></i>
+          </div>
+        </div>
+      </nav>
+    </header>
+    
+    <section class="mida">
+      <section class="texto_ppal">
+        <h1 class="Tittle">New Sweatshirt <br>
+          COLLECTIONS 2022</h1>
+          
+          <p class="parrafo">Latest arrival of the new Hanes Midweight Crewneck sweatshirt <br> imported from the 2022 series, with a modern
+            design</p>
+            <ul class="clase_boton">
+              <div class="first_class">
+                  
+                <div class="Precio">
+                    <span>
+                      <h2>$14.00</h2>
+                </span>
+               </div>
+        
+               <button class="buton">
+                <span>Discover</span>
+               </button>
+        
+               <button class="Btn_Cart">
+                <span>ADD TO CART</span>
+               </button>
+             
+           
+             </ul>
+      </section>
+      <div class="ima_ppal">
+        <img src="./src/home.png" alt="">
+      </div>
+  
+
+
+          
+       
+      
+
+  </section>
+    <div class="qwe">
+      <article class="clothes">
+        <div class="show">
+  
+          <section class="productos" id="productos__tittle">
+  
+            <ul class="products__line " onclick="filterSelection('all')">
+              <h3 class="titleppal">
+                Show All
+              </h3>
+              <span class="lettermn">
+                show all products
+              </span>
+            </ul>
+  
+  
+            <ul class="products__line" onclick="filterSelection('hoodies')">
+              <h3 class="titleppal">
+                Hoodies
+              </h3>
+              <span class="lettermn">
+                  3 products
+                </span>
+  
+              </ul>
+  
+  
+            <ul class="products__line" onclick="filterSelection('Shirts')">
+              <h3 class="titleppal">
+                Shirts
+              </h3>
+              <span class="lettermn">
+                4 products
+              </span>
+            </ul>
+  
+            
+            <ul class="products__line" onclick="filterSelection('sweatshirts')">
+              <h3 class="titleppal">
+                Sweatshirts
+              </h3>
+              <span class="lettermn">
+                  4 products
+                </span>
+            </ul>
+          </section>
+          <section class="products" id="products">
+            <div class="products__container ">
+              <div class="products__content grid" id="products__content">
+                <article class="target_hoodies hoodies filterDiv">
+                  <div class="figure">
+                    <img src="./src/candado_files/featured1.png" alt="Hoodies" class="products__img">
+                  </div>
+  
+                  <div class="info_sale">
+                    <h2 class="sale_products">$14.00 <span class="letter">| Stock: 10</span></h2>
+                    <h3 class="name_sale">Hoodies</h3>
+  
+                    <button class="button Button_up botonClick" id="botonClick" data-id="1">
+                      <i class="bx bx-plus"></i>
+                    </button>
+                  </div>
+                </article>
+                <article class="target_shirts Shirts filterDiv">
+                  <div class="figure">
+                    <img src="./src/candado_files/featured2.png" alt="Shirts" class="products__img">
+                  </div>
+  
+                  <div class="info_sale">
+                    <h2 class="sale_products">$24.00 <span class="letter">| Stock: 15</span></h2>
+                    <h3 class="name_sale">Shirts</h3>
+  
+                    <button class="button Button_up botonClick2" id="botonClick2" data-id="2">
+                      <i class="bx bx-plus"></i>
+                    </button>
+                  </div>
+                </article>
+                <article class="target_sweatshirts sweatshirts filterDiv">
+                  <div class="figure">
+                    <img src="./src/candado_files/featured3.png" alt="Sweatshirts" class="products__img">
+                  </div>
+  
+                  <div class="info_sale">
+                    <h2 class="sale_products">$24.00 <span class="letter">| Stock: 20</span></h2>
+                    <h3 class="name_sale">Sweatshirts</h3>
+  
+                    <button class="button Button_up botonClick3" id="botonClick3" data-id="3">
+                      <i class="bx bx-plus"></i>
+                    </button>
+                  </div>
+                </article>
+              </div>
+            </div>
+          </section>
+      </article>
+    </div>
+    </div>
+
+
+
+
+    <footer class="footer_section">
+      <div class="container2">
+        <div class="footercontentido">
+          <h3 class="titulo">Our information</h3>
+
+          <ul class="listafooter">
+            <li>Toluca - México</li>
+          </ul>
+        </div>
+        <div class="footercontentido">
+          <h3 class="titulo">About Us</h3>
+
+          <ul class="links">
+            <li>
+              <a href="#" class="link">Support Center</a>
+            </li>
+            <li>
+              <a href="#" class="link">Customer Support</a>
+            </li>
+            <li>
+              <a href="#" class="link">About Us</a>
+            </li>
+            <li>
+              <a href="#" class="link">Copy Right</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footercontentido">
+          <h3 class="titulo">Product</h3>
+
+          <ul class="links">
+            <li>
+              <a href="#" class="link">Hoodies</a>
+            </li>
+            <li>
+              <a href="#" class="link">Shirts</a>
+            </li>
+            <li>
+              <a href="#" class="link">Sweatshirts</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footercontentido">
+          <h3 class="titulo">Social</h3>
+
+          <ul class="social">
+            <a href="https://www.facebook.com/" target="" class="social-link">
+              <i class="bx bxl-facebook"></i>
+            </a>
+
+            <a href="https://twitter.com/" target="" class="social-link">
+              <i class="bx bxl-twitter"></i>
+            </a>
+
+            <a href="https://www.instagram.com/" target="" class="social-link">
+              <i class="bx bxl-instagram"></i>
+            </a>
+          </ul>
+        </div>
+      </div>
+
+      <span class="footer_final">
+        <p>© ACADEMLO. All rigths reserved</p>
+      </span>
+    </footer>
+  </div></div>
+    <script src="./main.js"></script>
+
+  </body>
+</main>
+
+</html>
