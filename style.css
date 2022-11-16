@@ -3,6 +3,9 @@ body{
   --body-font: 'Roboto', sans-serif;
 }
 
+div {
+  display: block;
+}
 
 .nav {
   flex-wrap: wrap;
@@ -242,6 +245,23 @@ ul{
   gap: .25rem;
 }
 
+.cart-container{
+  position: fixed;
+  top: 100px;
+  display: flex;
+  flex-direction: column;
+  width: 600px;
+  height: 100vh;
+  background-color: white;
+  z-index: 1000;
+  transform: translateX(300%);
+}
+
+.show-cart{
+  transform: translateX(100%);
+ 
+} 
+
 .clothes .show  img{
   width: 200px;
   height: 200px;
@@ -417,6 +437,11 @@ ul{
   display: center;
 }
 
+.target_hoodies{
+  width: 100px;
+  height: 100px;
+}
+
 
 .target_hoodies:hover .products__img {
   transform: translateY(-.25rem);
@@ -455,6 +480,7 @@ ul{
   display: flex;
   align-items: center;
   column-gap: 1rem;
+  background-color: red;
 }
 
 .button:hover {
@@ -510,6 +536,21 @@ ul{
 
 .linkactivo {
   color: pink;
+}
+
+.container-porduct-cart-shop{
+  display: flex;
+  flex-direction:column;
+}
+
+.card-product-shop .box-img{
+  width: 100px;
+  height: 100px;
+}
+
+.card-product-shop .box-img #img-shop{
+  width:  100%;
+  height: 100%;
 }
 
 @media screen and (min-width: 576px) {
